@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --purple:#764ba2;
+    --blue : #667eea;
+    --bg : linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --second_color : rgb(56, 56, 90);
+    --box-shadow:.5rem .5rem 0 rgba(107, 22, 160, 0.2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, 0.1);
+    --border : .2rem solid var(--purple);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:  var(--purple);
+}
+
+html::-webkit-scrollbar-thumb{
+    background:white;
+    border-radius: 5rem;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+section:nth-child(even){
+    background: rgb(244, 244, 244);
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 5rem;
+    letter-spacing: .4rem;
+    text-shadow: var(--text-shadow);
+    color: var(--purple);
+}
+
+.heading span{
+    text-transform: uppercase;
+    color: var(--blue);
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border: .2rem solid white;
+    border-radius: .5rem;
+    color: var(--purple);
+    background: white;
+    box-shadow: var(--box-shadow);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn span{
+    padding: .7rem 1rem;
+    border-radius: .5rem;
+    background: var(--bg);
+    color: white;
+    margin-left: .5rem;
+}
+
+.btn:hover{
+    background: var(--bg);
+    color: white;
+}
+
+.btn:hover span{
+    color: var(--purple);
+    background: white;
+    margin-left: 1rem;
+}
+
+.header{
+    padding: 2rem 9%;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    background: var(--bg);
+}
+
+.header .logo{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.header .logo i{
+    color: white;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: white;
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover{
+    opacity: .9;
+    border-bottom:.2rem solid white;
+    padding-bottom: .3rem;
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--purple);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2.5rem;
+    
+}
+
+.home .image{
+    flex:1 1 45rem;
+}
+
+.home .image img{
+    width: 100%;
+}
+
+.home .contact{
+    flex:1 1 45rem;
+}
+
+.home .content h3{
+    font-size: 4.5rem;
+    color:var(--purple);
+    line-height: 1.8;
+    text-shadow: var(--text-shadow);
+}
+
+.home .content p{
+    font-size: 1.7rem;
+    color:var(--blue);
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+
+.icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.icons-container .icons{
+   border: var(--border);
+   box-shadow: var(--box-shadow);
+   border-radius: .5rem;
+   text-align: center;
+   padding: 2.5rem;
+}
+
+.icons-container .icons i{
+    font-size: 4.5rem;
+    color: var(--purple);
+    padding-bottom: .7rem;
+    
+}
+
+.icons-container .icons h3{
+    font-size: 4.5rem;
+    color: var(--blue);
+    padding: .5rem 0;
+    text-shadow: var(--text-shadow);
+
+}
+
+.icons-container .icons p{
+   font-size: 1.7rem;
+   color: var(--second_color);
+}
+
+
+.icons-container .main {
+    background: var(--bg);
+    border: none;
+}
+
+ .icons-container .main i {
+    color: white;
+}
+
+ .icons-container .main h3 {
+    color: white;
+}
+
+ .icons-container .main p {
+    color: white;
+}
+
+ .icons:hover{
+    background: var(--bg);
+    border: none;
+}
+
+.icons:hover i{
+    color: white;
+}
+
+.icons:hover h3{
+    color: white;
+}
+
+.icons:hover p{
+    color: white;
+}
+
+.main-quotes .quotes-box{
+    
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 10rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.main-quotes .quotes-box .quote{
+    flex: 1 1 45rem;
+    padding: 1rem 0;
+    padding-left: 5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.main-quotes .quotes-box .quote i{
+
+    color: var(--purple);
+    font-size: 2.5rem;
+    
+}
+
+.main-quotes .quotes-box .quote h3{
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    color: var(--second_color);
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:3rem;
+}
+
+.about .row .image{
+    flex:1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex:1 1 45rem;
+}
+
+.about .row .content h3{
+    color: var(--purple);
+    text-shadow: var(--text-shadow);
+    font-size: 4rem;
+    line-height: 1.8;
+}
+
+.about .row .content p{
+    color: var(--second_color);
+    padding:1rem 0;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+.developers .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
+}
+
+.developers .box-container .box{
+    text-align: center;
+    background:#fff;
+    border-radius: .5rem;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    padding:2rem;
+}
+
+.developers .box-container .box img{
+    height: 21rem;
+    width: 25rem;
+    border:var(--border);
+    border-radius: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.developers .box-container .box h3{
+    color:var(--purple);
+    font-size: 2.5rem;
+    text-shadow: var(--text-shadow);
+}
+
+.developers .box-container .box span{
+    color:var(--blue);
+    font-size: 1.5rem;
+}
+
+.developers .box-container .box .share{
+    padding-top: 2rem;
+}
+
+.developers .box-container .box .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    color:var(--purple);
+    border-radius: .5rem;
+    border:var(--border);
+    margin:.3rem;
+}
+
+.developers .box-container .box .share a:hover{
+    background:var(--bg);
+    color:#fff;
+    box-shadow: var(--box-shadow);
+    border: .2rem solid var(--greenn);
+}
+
+.review h5{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+    color: var(--blue);
+}
+
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:2rem;
+}
+
+.review .box-container .box{
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding:2.5rem;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.review .box-container .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border:.5rem solid #fff;
+}
+
+.review .box-container .box h3{
+    color:#fff;
+    font-size: 2.2rem;
+    padding:.5rem 0;
+}
+
+.review .box-container .box .stars i{
+    color:#fff;
+    font-size: 1.5rem;
+}
+
+.review .box-container .box .text{
+    color:var(--light-color);
+    line-height: 1.8;
+    font-size: 1.6rem;
+    padding-top: 4rem;
+}
+
+.review .box-container .box::before{
+    content: '';
+    position: absolute;
+    top:-4rem; left: 50%;
+    transform:translateX(-50%);
+    background:var(--purple);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 25rem;
+    width: 120%;
+    z-index: -1;
+}
+
+
+.projects .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
+    padding-bottom: 3rem;
+}
+
+.projects .box-container .box{
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.projects .box-container .box .image{
+    height: 20rem;
+    overflow:hidden;
+    border-radius: .5rem;
+}
+
+
+.projects .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.projects .box-container .box:hover .image img{
+    transform:scale(1.2);
+}
+
+.projects .box-container .box .content{
+    padding-top: 1rem;
+}
+
+.projects .box-container .box .content .icon{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.projects .box-container .box .content .icon a{
+    font-size: 1.4rem;
+    color: var(--blue);
+}
+
+.projects .box-container .box .content .icon a:hover{
+    color:var(--purple);
+}
+
+.projects .box-container .box .content .icon a i{
+    padding-right: .5rem;
+    color: var(--purple);
+}
+
+.projects .box-container .box .content h3{
+    color:var(--purple);
+    font-size: 3rem;
+}
+
+.projects .box-container .box .content p{
+    color:var(--second_color);
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding:1rem 0;
+}
+
+.footer{
+    background: var(--bg);
+    text-align: center;
+}
+
+.footer .logo{
+    color: white;
+    font-size: 2.7rem;
+}
+
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: initial;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:115%; right: 2rem;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        width: 30rem;
+        border: var(--border);
+        background: var(--bg);
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+
+    .header .navbar.active{
+        transform: scale(1);
+        opacity: 1;
+        transition: .2s ease-out;
+    }
+
+    .header .navbar a{
+        
+        font-size: 2rem;
+        display: block;
+        margin:2.5rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+
+}
